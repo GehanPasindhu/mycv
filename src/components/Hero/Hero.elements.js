@@ -1,14 +1,27 @@
 import styledComponents from "styled-components";
 
+export const HeroContaienr= styledComponents.div`
+margin-left: 40px;
+margin-right: 40px;
+
+@media screen and (max-width: 768px) {
+    padding: 10px 0;
+}
+`;
+
 export const HeroWrapper = styledComponents.div`
 display: gird;
 z-index: 1;
-width: 100vw;
-max-width: 1300px;
+width: 100%
 margin-right: auto;
 margin-left: auto;
-margin-top:6rem;
+margin-top:2rem;
+padding: 0 15px;
 justify-content: center;
+
+@media screen and (max-width: 768px) {
+    padding: 0 2px;
+}
 `;
 
 export const Row = styledComponents.div`
@@ -17,9 +30,8 @@ grid-auto-columns: minmax(auto, 1fr);
 align-items: center;
 grid-template-areas: "col1 col2";
 
-
 @media screen and (max-width: 768px) {
-    grid-template-areas: "col2 col1";
+    grid-template-areas: 'col2' 'col1';
 }
 `;
 
@@ -27,6 +39,12 @@ export const Col1 = styledComponents.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col1;
+`;
+
+export const Col2 = styledComponents.div`
+margin-bottom: 15px;
+padding: 0 2px;
+grid-area: col2;
 `;
 
 export const H1 = styledComponents.h1`
@@ -55,6 +73,8 @@ export const P = styledComponents.p`
 color:#f1f1f1;
 font-family:monospace;
 font-size: 1.4rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
 `;
 
 export const Button = styledComponents.button`
@@ -66,14 +86,11 @@ border-radius: 500px;
 background-color: #1ab152;
 background-image: url(https://assets.website-files.com/56579ffcc34a791f576971ce/5bf92fcb0627e7ec09fb2e9a_icon-whats.svg);
 background-position: 32px 50%;
-background-size: 28px;
+background-size: 20px;
 background-repeat: no-repeat;
 color: #fff;
-font-size: 18px;
+font-size: 15px;
+text-decoration: none !important;
 `;
 
-export const Col2 = styledComponents.div`
-margin-bottom: 15px;
-padding: 0 15px;
-grid-area: col2;
-`;
+

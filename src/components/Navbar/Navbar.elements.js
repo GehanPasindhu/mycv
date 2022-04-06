@@ -4,12 +4,10 @@ import { Contaienr } from "../../globalStyle";
 
 export const Nav = styledComponents.nav`
 background: #000;
-height:150px;
 display:flex;
 justify-content:center;
-align-items:center;
+align-items:left;
 font-size:1.5rem;
-position:sticky;
 top:0;
 z-index:10;
 `;
@@ -30,6 +28,7 @@ text-decoration:none;
 font-size:1.5rem;
 display:flex;
 align-items:center;
+padding:0 20px;
 `;
 
 export const Icon = styledComponents.img`

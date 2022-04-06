@@ -1,7 +1,7 @@
 import React from "react";
-import { Contaienr } from "../../globalStyle";
 
 import {
+  HeroContaienr,
   HeroWrapper,
   Row,
   Col1,
@@ -17,7 +17,7 @@ import {
 function Hero() {
   return (
     <>
-      <Contaienr>
+      <HeroContaienr>
         <HeroWrapper>
           <Row>
             <Col1>
@@ -34,7 +34,8 @@ function Hero() {
               <Button>
                 <a
                   style={{
-                    textDecoration: "none !important",
+                    marginLeft: "-1rem",
+                    textDecoration: "none",
                     color: "#fff",
                     background: "transparent",
                   }}
@@ -45,10 +46,10 @@ function Hero() {
                 </a>
               </Button>
             </Col1>
-            <Col2>Hiii</Col2>
+            <Col2></Col2>
           </Row>
         </HeroWrapper>
-      </Contaienr>
+      </HeroContaienr>
     </>
   );
 }
