@@ -13,6 +13,10 @@ import {
   Description,
 } from "./Recomendations.elements";
 
+import Ashan from "../images/ashan.jpg";
+import Asanga from "../images/asanga.jpg";
+import Ranil from "../images/Ranil.jpg";
+
 function Recomendations() {
   return (
     <>
@@ -22,9 +26,7 @@ function Recomendations() {
        
           <RecomendCard>
             <NameRow>
-              <Dp>
-                  My Pic
-              </Dp>
+              <Dp src={Ranil} />
               <Name>
                 <NameText>
                 Ranil Balasuriya
@@ -35,22 +37,20 @@ function Recomendations() {
               </Name>
             </NameRow>
             <Description>
-            Gehan came into handle the online platform in my dept. He came in as a specialist in Web designing and was able to take our online platform to another level with he's knowledge and experience. A hardworker and mostly a team player. What I liked about him was that he was always ready to help out he's team mates when they needed he's support. Looking forward to see him grow in he's career and I'm sure he will be one to look out for in the future.
+           Gehan came into handle the online platform in my dept. He came in as a specialist in Web designing and was able to take our online platform to another level with he's knowledge and experience. A hardworker and mostly a team player. What I liked about him was that he was always ready to help out he's team mates when they needed he's support. Looking forward to see him grow in he's career and I'm sure he will be one to look out for in the future.
              </Description>
           </RecomendCard>
 
 
           <RecomendCard>
             <NameRow>
-              <Dp>
-                  My Pic
-              </Dp>
+             <Dp src={Ashan} />
               <Name>
                 <NameText>
                     Ashan Herath
                 </NameText>
-                <Postion>
-                    Manager - Marketing & Perfromance at Tutopiya
+                <Postion style={{ fontSize:'0.8rem' }}>
+                    Manager - Marketing and Perfromance at Tutopiya
                 </Postion>
               </Name>
             </NameRow>
@@ -61,11 +61,9 @@ function Recomendations() {
 
           <RecomendCard>
             <NameRow>
-              <Dp>
-                  My Pic
-              </Dp>
+              <Dp src={Asanga} />
               <Name>
-                <NameText>
+                <NameText style={{ fontSize:'1.2rem' }}>
                 Asanga Suriyapperuma
                 </NameText>
                 <Postion>
@@ -74,7 +72,7 @@ function Recomendations() {
               </Name>
             </NameRow>
             <Description>
-            I have worked with Gehan and he’s truly a remarkable guy who knows in and out in e commerce buyer behavior and have an in depth knowledge in tech . Gehan is an asset to any organization. 
+            I have worked with Gehan and he’s truly a remarkable guy who knows in and out in e commerce buyer behavior and have an in depth knowledge in tech. Gehan is an asset to any organization. 
             </Description>
           </RecomendCard>
 
