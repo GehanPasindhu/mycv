@@ -13,7 +13,7 @@ z-index:10;
 `;
 
 export const NavbarContainer = styledComponents(Contaienr)`
-display:flex;
+display:block;
 justify-content:space-between;
 height:80px; 
 
@@ -33,5 +33,5 @@ padding:0 20px;
 
 export const Icon = styledComponents.img`
 margin-right:0.5rem;
-height:150px;
+height:90px;
 `;

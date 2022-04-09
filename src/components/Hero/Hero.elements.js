@@ -7,6 +7,12 @@ margin-right: 40px;
 @media screen and (max-width: 768px) {
     padding: 10px 0;
 }
+
+@media screen and (max-width: 576px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 5px 0;
+}
 `;
 
 export const HeroWrapper = styledComponents.div`
@@ -39,6 +45,7 @@ export const Col1 = styledComponents.div`
 margin-bottom: 15px;
 padding: 0 15px;
 grid-area: col1;
+width: 100%;
 `;
 
 export const Col2 = styledComponents.div`
@@ -94,3 +101,6 @@ text-decoration: none !important;
 `;
 
 
+export const Image = styledComponents.img`
+
+`;

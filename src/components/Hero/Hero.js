@@ -11,8 +11,8 @@ import {
   SPAN,
   P,
   Button,
-  Image,
 } from "./Hero.elements";
+
 
 function Hero() {
   return (
@@ -46,7 +46,9 @@ function Hero() {
                 </a>
               </Button>
             </Col1>
-            <Col2></Col2>
+            <Col2>
+           
+            </Col2>
           </Row>
         </HeroWrapper>
       </HeroContaienr>

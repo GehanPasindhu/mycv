@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import Footer from "./components/Footer/Footer";
 import Recomendations from "./components/Recomendations/Recomendations";
+import TimeLineb from "./components/TimeLine/TimeLineb";
 
 function App() {
 
@@ -19,8 +20,9 @@ useEffect(() => {
   return (
  <Router>
    <GlobalStyle />
-   <Navbar />
+   {/* <Navbar /> */}
    <Hero/>
+   <TimeLineb/>
    <Recomendations/>
    <Footer />
  </Router>
