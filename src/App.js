@@ -8,6 +8,7 @@ import Recomendations from "./components/Recomendations/Recomendations";
 import TimeLineb from "./components/TimeLine/TimeLineb";
 import ReactTalk from "./components/ReactTalk/ReactTalk";
 
+
 function App() {
   const TRACKING_ID = "G-38V66T52X1";
   ReactGA.initialize(TRACKING_ID);
@@ -20,7 +21,7 @@ function App() {
     <Router>
       <GlobalStyle />
       <Navbar />
-      <Hero/>
+      <Hero />
       <TimeLineb />
       <ReactTalk />
       <Recomendations />

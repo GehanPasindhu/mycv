@@ -35,7 +35,7 @@ font-size: 15px;
 text-decoration: none !important;
 margin-left:10px;
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
   margin-left:-5px;
 }
 `;
@@ -154,8 +154,8 @@ function Hero() {
                 Gehan <SPAN> Pasindhu</SPAN>
               </Text>
               <Text className={classes.p}>
-                Freelance Web Developer | Software Engineer | Digital Marketer
-                | Business Developer | Marketer
+                Freelance Web Developer | Software Engineer | Digital Marketer |
+                Business Developer | Marketer
               </Text>
 
               <Grid>
@@ -211,7 +211,6 @@ function Hero() {
                 </a>
               </Button>
             </Grid.Col>
-            <Grid.Col md={12} lg={6}></Grid.Col>
           </Grid>
         </Container>
       </MantineProvider>

@@ -7,7 +7,7 @@ import {
 } from "@mantine/core";
 import React from "react";
 import { LineDashed } from "tabler-icons-react";
-
+import { Player } from "@lottiefiles/react-lottie-player";
 const useStyles = createStyles((theme) => ({
   title: {
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
@@ -28,8 +28,24 @@ const useStyles = createStyles((theme) => ({
       color: "#fff",
       transform: "none",
       top: "0",
-      left:"auto",
-      right:"auto",
+      left: "auto",
+      right: "auto",
+    },
+  },
+
+  lo: {
+    [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
+      height: "500px",
+      width: "500px",
+      zIndex: "10",
+      position: "absolute",
+      right: "0",
+      marginTop: "-40rem !important",
+      background: "transparent",
+    },
+
+    [`@media (max-width: ${theme.breakpoints.md}px)`]: {
+      display:"none !important"
     },
   },
 }));
@@ -123,6 +139,13 @@ function TimeLineb() {
             </Text>
           </Timeline.Item>
         </Timeline>
+
+        <Player
+          autoplay
+          loop
+          src="https://assets10.lottiefiles.com/packages/lf20_dbepcwmj.json"
+          className={classes.lo}
+        />
 
         <Timeline color="grape" active={2} align="right" pt="xl" mt="md">
           <Timeline.Item
