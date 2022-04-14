@@ -33,6 +33,25 @@ background-repeat: no-repeat;
 color: #fff;
 font-size: 15px;
 text-decoration: none !important;
+margin-left:10px;
+
+@media screen and (max-width: 768px){
+  margin-left:-5px;
+}
+`;
+
+const Button2 = styledComponents.button`
+margin-top: 1rem;
+text-transform: uppercase;
+padding: 20px 35px 20px 35px;
+border: 1px solid orange;
+border-radius: 500px;
+background-position: 32px 50%;
+background-size: 20px;
+background-repeat: no-repeat;
+color: orange;
+font-size: 15px;
+text-decoration: none !important;
 `;
 
 const useStyles = createStyles((theme) => ({
@@ -86,13 +105,26 @@ const useStyles = createStyles((theme) => ({
   icon: {
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "gold",
-      border: "1px solid orange",
+      border: "1px solid yellow",
       borderRadius: "50%",
       padding: "0.25rem",
       height: "35px",
       width: "35px",
       marginTop: "0.4rem",
       marginRight: "0.3rem",
+
+      "&:hover": {
+        transition: "0.2s ease-in-out !important",
+        height: "45px",
+        width: "45px",
+      },
+    },
+  },
+
+  sbtn: {
+    "&:hover": {
+      transition: "0.2s ease-in-out !important",
+      fontSize: "1.25rem",
     },
   },
 }));
@@ -122,7 +154,7 @@ function Hero() {
                 Gehan <SPAN> Pasindhu</SPAN>
               </Text>
               <Text className={classes.p}>
-                Freelancer Web Developer | Software Engineer | Digital Marketer
+                Freelance Web Developer | Software Engineer | Digital Marketer
                 | Business Developer | Marketer
               </Text>
 
@@ -133,16 +165,37 @@ function Hero() {
                 <Text component="a" href="mailto:pasindhu@izocele.lk">
                   <Mail className={classes.icon} />
                 </Text>
-                <Text component="a" href="https://www.linkedin.com/in/gehanpasindhu/">
+                <Text
+                  component="a"
+                  href="https://www.linkedin.com/in/gehanpasindhu/"
+                >
                   <BrandLinkedin className={classes.icon} />
                 </Text>
-                <Text component="a" href="https://www.facebook.com/gehanpasindhujay/">
+                <Text
+                  component="a"
+                  href="https://www.facebook.com/gehanpasindhujay/"
+                >
                   <BrandFacebook className={classes.icon} />
                 </Text>
-                <Text component="a" href="https://www.instagram.com/izocele.lk/">
+                <Text
+                  component="a"
+                  href="https://www.instagram.com/izocele.lk/"
+                >
                   <BrandInstagram className={classes.icon} />
                 </Text>
               </Grid>
+
+              <a
+                href="/gehanPasindhu.pdf"
+                download
+                style={{
+                  textDecoration: "none",
+                  color: "orange",
+                  background: "transparent",
+                }}
+              >
+                <Button2 className={classes.sbtn}>Download My Cv</Button2>
+              </a>
 
               <Button>
                 <a
