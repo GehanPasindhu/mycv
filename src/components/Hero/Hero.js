@@ -57,6 +57,12 @@ text-decoration: none !important;
 
 const useStyles = createStyles((theme) => ({
   title: {
+    color: "#f1f1f1",
+    fontSize: "1.5rem",
+    lineHeight: "1.2",
+    fontWeight: "500",
+    letterSpacing: "1.4px",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "#f1f1f1",
       fontSize: "1.5rem",
@@ -72,6 +78,14 @@ const useStyles = createStyles((theme) => ({
   },
 
   title2: {
+    textTransform: "uppercase",
+    color: "#f1f1f1",
+    fontSize: "4rem",
+    lineHeight: "1",
+    fontWeight: "800",
+    letterSpacing: "0.1rem",
+    fontFamily: "'Fira Code', monospace",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       textTransform: "uppercase",
       color: "#f1f1f1",
@@ -88,6 +102,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   p: {
+    color: "#f1f1f1",
+    fontFamily: "monospace",
+    fontSize: "1.5rem",
+    marginTop: "1rem",
+    marginBottom: "1rem",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "#f1f1f1",
       fontFamily: "monospace",
@@ -104,6 +124,21 @@ const useStyles = createStyles((theme) => ({
   },
 
   icon: {
+    color: "gold",
+    border: "1px solid yellow",
+    borderRadius: "50%",
+    padding: "0.25rem",
+    height: "35px",
+    width: "35px",
+    marginTop: "0.4rem",
+    marginRight: "0.3rem",
+
+    "&:hover": {
+      transition: "0.2s ease-in-out !important",
+      height: "45px",
+      width: "45px",
+    },
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "gold",
       border: "1px solid yellow",
@@ -113,12 +148,6 @@ const useStyles = createStyles((theme) => ({
       width: "35px",
       marginTop: "0.4rem",
       marginRight: "0.3rem",
-
-      "&:hover": {
-        transition: "0.2s ease-in-out !important",
-        height: "45px",
-        width: "45px",
-      },
     },
   },
 

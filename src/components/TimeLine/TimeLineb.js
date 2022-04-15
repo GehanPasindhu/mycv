@@ -11,6 +11,16 @@ import { LineDashed } from "tabler-icons-react";
 import { Player } from "@lottiefiles/react-lottie-player";
 const useStyles = createStyles((theme) => ({
   title: {
+    fontSize: "3rem",
+    transformOrigin: "0 0",
+    transform: "rotate(-90deg)",
+    position: "relative",
+    top: "20rem",
+    zIndex: "1",
+    left: "-5rem",
+    fontWeight: "800",
+    background: "transparent",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       fontSize: "3rem",
       transformOrigin: "0 0",
@@ -35,6 +45,15 @@ const useStyles = createStyles((theme) => ({
   },
 
   lo: {
+
+    height: "750px",
+      width: "750px",
+      zIndex: "1",
+      position: "absolute",
+      right: "0",
+      marginTop: "-45rem !important",
+      background: "transparent",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       height: "580px",
       width: "530px",
@@ -46,7 +65,7 @@ const useStyles = createStyles((theme) => ({
     },
 
     [`@media (max-width: ${theme.breakpoints.md}px)`]: {
-      display:"none !important"
+      display: "none !important",
     },
   },
 }));
@@ -68,7 +87,7 @@ function TimeLineb() {
     >
       <Container fludid style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
         <Title
-        order={2}
+          order={2}
           style={{
             color: "gold",
             fontFamily: "'Archivo Black', sans-serif",
@@ -103,7 +122,6 @@ function TimeLineb() {
           <Timeline.Item
             title="Royal Lanka Agencies"
             style={{ color: "#f1f1f1" }}
-            
           >
             <Text color="dimmed" size="md">
               Joined as a Business Development Executive E Commerce (2020 -

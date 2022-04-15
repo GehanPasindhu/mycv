@@ -14,6 +14,8 @@ import { BrandGithub } from "tabler-icons-react";
 
 const useStyles = createStyles((theme) => ({
   title: {
+    fontSize: "3rem",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       fontSize: "3rem",
     },
@@ -24,6 +26,8 @@ const useStyles = createStyles((theme) => ({
   },
 
   title2: {
+    fontSize: "2.5rem",
+    
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       fontSize: "2.5rem",
     },

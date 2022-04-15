@@ -27,6 +27,13 @@ text-decoration: none !important;
 
 const useStyles = createStyles((theme) => ({
   title: {
+    color: "orange",
+    fontSize: "2.2rem",
+    lineHeight: "1.2",
+    fontWeight: "500",
+    letterSpacing: "1.4px",
+    fontFamily: "'Fira Code', monospace",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "orange",
       fontSize: "2rem",
@@ -43,6 +50,14 @@ const useStyles = createStyles((theme) => ({
     },
   },
   title2: {
+    color: "gold",
+    fontSize: "1rem",
+    lineHeight: "1.2",
+    fontWeight: "500",
+    letterSpacing: "1.4px",
+    fontFamily: "'Fira Code', monospace",
+    marginLeft: "2rem",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "gold",
       fontSize: "0.8rem",
@@ -58,6 +73,13 @@ const useStyles = createStyles((theme) => ({
     },
   },
   p: {
+    color: "#f1f1f1",
+    fontFamily: "monospace",
+    fontSize: "1.3rem",
+    marginTop: "1rem",
+    marginBottom: "1rem",
+    textAlign: "justify",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "#f1f1f1",
       fontFamily: "monospace",
@@ -75,6 +97,14 @@ const useStyles = createStyles((theme) => ({
     },
   },
   p2: {
+    color: "gray",
+    fontFamily: "monospace",
+    fontSize: "0.9rem",
+    marginBottom: "1rem",
+    textAlign: "justify",
+    marginLeft: "2rem",
+    listStyleType: "none",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "gray",
       fontFamily: "monospace",
@@ -92,6 +122,14 @@ const useStyles = createStyles((theme) => ({
     },
   },
   hline: {
+    color: "gold",
+    border: "0.5px solid lightgreen",
+    width: "55%",
+    marginTop: "0.4rem",
+    marginRight: "0.3rem",
+    marginBottom: "0.5rem",
+    marginLeft: "2rem",
+
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       color: "gold",
       border: "0.5px solid lightgreen",
@@ -267,13 +305,19 @@ function Footer() {
               </List>
             </Grid.Col>
           </Grid>
-        </Container>
-        <Container  m="md" p="sm">
-          <Grid gutter="sm" >
+
+          <Grid pt="lg" mt="md">
             <Grid.Col md={12} lg={12}>
-            < Text color="#f1f1f1" style={{ fontSize:"0.75rem" }} align="right">
-                <span style={{ fontSize:"0.8rem", color:"gray" }}>Version</span><br/>
-               {date.getFullYear()} &copy; Edition
+              <Text
+                color="#f1f1f1"
+                style={{ fontSize: "0.75rem" }}
+                align="right"
+              >
+                <span style={{ fontSize: "0.8rem", color: "gray" }}>
+                  Version
+                </span>
+                <br />
+                {date.getFullYear()} &copy; Edition
               </Text>
             </Grid.Col>
           </Grid>
