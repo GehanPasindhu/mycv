@@ -4,6 +4,7 @@ import {
   MantineProvider,
   Text,
   Timeline,
+  Title,
 } from "@mantine/core";
 import React from "react";
 import { LineDashed } from "tabler-icons-react";
@@ -35,12 +36,12 @@ const useStyles = createStyles((theme) => ({
 
   lo: {
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
-      height: "500px",
-      width: "500px",
-      zIndex: "10",
+      height: "580px",
+      width: "530px",
+      zIndex: "1",
       position: "absolute",
       right: "0",
-      marginTop: "-40rem !important",
+      marginTop: "-45rem !important",
       background: "transparent",
     },
 
@@ -66,7 +67,8 @@ function TimeLineb() {
       }}
     >
       <Container fludid style={{ paddingTop: "3rem", paddingBottom: "3rem" }}>
-        <Text
+        <Title
+        order={2}
           style={{
             color: "gold",
             fontFamily: "'Archivo Black', sans-serif",
@@ -75,7 +77,7 @@ function TimeLineb() {
           className={classes.title}
         >
           LifeLine
-        </Text>
+        </Title>
 
         <Timeline active={1} reverseActive>
           <Timeline.Item
@@ -101,6 +103,7 @@ function TimeLineb() {
           <Timeline.Item
             title="Royal Lanka Agencies"
             style={{ color: "#f1f1f1" }}
+            
           >
             <Text color="dimmed" size="md">
               Joined as a Business Development Executive E Commerce (2020 -

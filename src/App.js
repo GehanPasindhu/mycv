@@ -7,6 +7,7 @@ import Hero from "./components/Hero/Hero";
 import Recomendations from "./components/Recomendations/Recomendations";
 import TimeLineb from "./components/TimeLine/TimeLineb";
 import ReactTalk from "./components/ReactTalk/ReactTalk";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <TimeLineb />
       <ReactTalk />
       <Recomendations />
+      <Footer/>
     </Router>
   );
 }

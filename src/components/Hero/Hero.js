@@ -4,6 +4,7 @@ import {
   Grid,
   MantineProvider,
   Text,
+  Title,
 } from "@mantine/core";
 import React from "react";
 import styledComponents from "styled-components";
@@ -150,9 +151,9 @@ function Hero() {
               <Text className={classes.title}>
                 <SPAN>hi,</SPAN> I'm
               </Text>
-              <Text className={classes.title2}>
-                Gehan <SPAN> Pasindhu</SPAN>
-              </Text>
+              <Title order={1} className={classes.title2}>
+                Gehan<SPAN> Pasindhu</SPAN>
+              </Title>
               <Text className={classes.p}>
                 Freelance Web Developer | Software Engineer | Digital Marketer |
                 Business Developer | Marketer
