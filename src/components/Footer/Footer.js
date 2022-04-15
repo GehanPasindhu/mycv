@@ -9,7 +9,6 @@ import {
 } from "@mantine/core";
 import React from "react";
 import styledComponents from "styled-components";
-import { Heart } from "tabler-icons-react";
 
 const Button2 = styledComponents.button`
 margin-top: 0.5rem;
