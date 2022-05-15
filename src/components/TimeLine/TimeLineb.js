@@ -45,14 +45,13 @@ const useStyles = createStyles((theme) => ({
   },
 
   lo: {
-
     height: "750px",
-      width: "750px",
-      zIndex: "1",
-      position: "absolute",
-      right: "0",
-      marginTop: "-45rem !important",
-      background: "transparent",
+    width: "750px",
+    zIndex: "1",
+    position: "absolute",
+    right: "0",
+    marginTop: "-45rem !important",
+    background: "transparent",
 
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
       height: "580px",
@@ -119,6 +118,23 @@ function TimeLineb() {
             </Text>
           </Timeline.Item>
 
+          <Timeline.Item title="Izocele (Pvt) Ltd" style={{ color: "#f1f1f1" }}>
+            <Text color="dimmed" size="md">
+              Software Engineer, Business Analysis, Digital Marketer (2018 -
+              today)
+              <Text size="sm" mt={4}>
+                <LineDashed size={12} /> Develop and Maintain Software Projects
+              </Text>
+              <Text size="sm" mt={4}>
+                <LineDashed size={12} /> Manageand create Social Media Campaigns
+              </Text>
+              <Text size="sm" mt={4}>
+                <LineDashed size={12} /> Manage all client affairs of the
+                company
+              </Text>
+            </Text>
+          </Timeline.Item>
+
           <Timeline.Item
             title="Royal Lanka Agencies"
             style={{ color: "#f1f1f1" }}
@@ -143,19 +159,13 @@ function TimeLineb() {
             </Text>
           </Timeline.Item>
 
-          <Timeline.Item title="Izocele (Pvt) Ltd" style={{ color: "#f1f1f1" }}>
+        
+
+          <Timeline.Item title="Baryon SE" style={{ color: "#f1f1f1" }}>
             <Text color="dimmed" size="md">
-              Software Engineer, Business Analysis, Digital Marketer (2018 -
-              today)
+              Frontend Developer(2022-05-04-today)
               <Text size="sm" mt={4}>
-                <LineDashed size={12} /> Develop and Maintain Software Projects
-              </Text>
-              <Text size="sm" mt={4}>
-                <LineDashed size={12} /> Manageand create Social Media Campaigns
-              </Text>
-              <Text size="sm" mt={4}>
-                <LineDashed size={12} /> Manage all client affairs of the
-                company
+                <LineDashed size={12} /> Develop and Maintain Software Projects (ReactJs)
               </Text>
             </Text>
           </Timeline.Item>

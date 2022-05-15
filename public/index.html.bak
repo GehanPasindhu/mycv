@@ -5,18 +5,15 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta 
-    name="description"
-    content="Hi there! I'm Gehan Pasindhu AKA Gehan Jay, Software Engineer based in Kandana, Sri Lanka. I'm passionate about web development and design. I'm currently working as a freelancer."
-/>
-<meta
-    name="keywords"
-    content="software engineer,frontend, frontenddeveloper, frontend developer, fullstack, baryon, baryon se,Portfolio, Portfolio website,Project, usa, australia, near me,founder,colombo,podda,js,react,reactjs,html, css, founder,se,gehan jay, jayamanna, gehan, gehan pasindhu, gehanpasindhu, izocele, isocele, kandana,sl,srilanka, Sri Lanka, web, web developer, website, designer,freelance, freelance website, freelance webdeveloper,freelancer, Gehan Pasindhu, pasindu, podda, gohome"
-/>
-<meta 
-    name="author"
-    content="Gehan Pasindhu"
-/>
+    <meta
+      name="description"
+      content="Hi there! I'm Gehan Jay AKA Gehan Pasindhu web developer based in Kandana, Sri Lanka. I'm passionate about web development and design. I'm currently working as a freelancer.
+    />
+    <meta
+      name="keywords"
+      content="software engineer,Portfolio, Portfolio website,Project, usa, australia, near me,founder,colombo,podda,js,react,reactjs,html, css, founder,se, gehan, gehan pasindhu, gehanpasindhu, izocele, isocele, kandana,sl,srilanka, Sri Lanka, web, web developer, website, designer,freelance, freelance website, freelance webdeveloper,freelancer, Gehan Pasindhu, pasindu, podda, gohome"
+    />
+    <meta name="author" content="Gehan Pasindhu" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
