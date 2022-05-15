@@ -45,12 +45,12 @@ const useStyles = createStyles((theme) => ({
   },
 
   lo: {
-    height: "750px",
-    width: "750px",
+    height: "600px",
+    width: "675px",
     zIndex: "1",
     position: "absolute",
     right: "0",
-    marginTop: "-45rem !important",
+    marginTop: "-48rem !important",
     background: "transparent",
 
     [`@media (max-width: ${theme.breakpoints.xl}px)`]: {
