@@ -269,6 +269,18 @@ function Footer() {
                 <br />
                 <List.Item
                   component="a"
+                  href="https://medium.com/@pasindhu97"
+                  style={{
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
+                  className={classes.pzq}
+                >
+                 Medium (Blog)
+                </List.Item>
+                <br />
+                <List.Item
+                  component="a"
                   href="https://www.facebook.com/gehanpasindhujay/"
                   style={{
                     textDecoration: "none",

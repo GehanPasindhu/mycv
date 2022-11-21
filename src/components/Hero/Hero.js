@@ -13,6 +13,7 @@ import {
   BrandGithub,
   BrandInstagram,
   BrandLinkedin,
+  BrandMedium,
   Mail,
 } from "tabler-icons-react";
 
@@ -185,7 +186,7 @@ function Hero() {
               </Title>
               <Text className={classes.p}>
                 Freelance Web Developer | Software Engineer | Digital Marketer |
-                Business Developer | Marketer
+                Business Developer | Marketer | Data Scientist
               </Text>
 
               <Grid>
@@ -212,6 +213,12 @@ function Hero() {
                   href="https://www.instagram.com/izocele.lk/"
                 >
                   <BrandInstagram className={classes.icon} />
+                </Text>
+                <Text
+                  component="a"
+                  href="https://medium.com/@pasindhu97"
+                >
+                  <BrandMedium className={classes.icon} />
                 </Text>
               </Grid>
 

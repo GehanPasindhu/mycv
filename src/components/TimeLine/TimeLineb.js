@@ -159,13 +159,17 @@ function TimeLineb() {
             </Text>
           </Timeline.Item>
 
-        
-
           <Timeline.Item title="Baryon SE" style={{ color: "#f1f1f1" }}>
             <Text color="dimmed" size="md">
               Frontend Developer(2022-05-04-today)
               <Text size="sm" mt={4}>
-                <LineDashed size={12} /> Develop and Maintain Software Projects (ReactJs)
+                <LineDashed size={12} /> Develop and Maintain Lab Software Projects (ReactJs)
+              </Text>
+              <Text size="sm" mt={4}>
+                <LineDashed size={12} /> FrontEnd Lead
+              </Text>
+              <Text size="sm" mt={4}>
+                <LineDashed size={12} /> Scurm Master
               </Text>
             </Text>
           </Timeline.Item>
