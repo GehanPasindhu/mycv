@@ -27,7 +27,17 @@ function BlogPost() {
       </div>
       <div className="text-justify mt-2 text-sm">
         {blog[0].description.map((des) => (
-          <div className="pt-2" key={des.id}>{des.content}</div>
+          <div className="pt-2" key={des.id}>
+            {des.content ? (
+              des.content
+            ) : des.img ? (
+              <img src={des.img} />
+            ) : des.downloadUrl ? (
+              <a href={des.downloadUrl} download>
+                {des.downloadtext}
+              </a>
+            ) : null}
+          </div>
         ))}
       </div>
     </div>
