@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { data } from "./Data";
 
 function index() {
   return (
-    <div className="container mx-auto px-4 py-4">
+    <div className="container mx-auto px-10 md:px-32 py-8">
       <div className="grid gap-4 grid-cols-1 md:grid-cols-4">
         {data.map((index) => (
           <div className="columns-1 p-3 shadow-md" id={index.id}>
@@ -21,8 +22,12 @@ function index() {
             <p className="mt-2 text-sm text-slate-600 text-justify ">
               {index.description[0].content.substring(0, 150)}
             </p>
-            <button className="text-xs font-bold hover:italic rounded-md border-0 text-green-600 mt-2 mb-1">
+            
+            <button className="text-xs font-bold hover:italic rounded-md border-0 text-green-600 mt-2 mb-1"
+            >
+             <Link to={'/blog/'+index.id}>
               Read More
+              </Link>
             </button>
           </div>
         ))}

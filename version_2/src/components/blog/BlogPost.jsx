@@ -9,7 +9,7 @@ function BlogPost() {
   console.log("blog", blog);
 
   return (
-    <div className="container mx-auto px-8 py-8">
+    <div className="container mx-auto px-10 md:px-32 py-8">
       <div className="text-[10px] -mb-2 text-slate-600 uppercase font-bold tracking-wider">
         {blog[0].category}
       </div>
@@ -27,11 +27,11 @@ function BlogPost() {
       </div>
       <div className="text-justify mt-2 text-sm">
         {blog[0].description.map((des) => (
-          <div className="pt-2" key={des.id}>
+          <div className="pt-2 pb-3" key={des.id}>
             {des.content ? (
               des.content
             ) : des.img ? (
-              <img src={des.img} />
+              <img src={des.img} alt={des.alt} className={des.imgclassname}/>
             ) : des.downloadUrl ? (
               <a href={des.downloadUrl} download>
                 {des.downloadtext}
