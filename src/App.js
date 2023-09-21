@@ -24,7 +24,7 @@ function App() {
       <Navbar />
       <Hero />
       <TimeLineb />
-      <ReactTalk />
+      // <ReactTalk />
       <Recomendations />
       <Footer/>
     </Router>
